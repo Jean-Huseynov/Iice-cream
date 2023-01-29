@@ -1,0 +1,256 @@
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+
+
+  @include tel {
+    padding-top: 14px;
+  }
+
+  @include tablet {
+    padding-top: 20px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+
+.page-header__nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.page-header__container--flex {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  display: block;
+  position: relative;
+  margin: 0;
+
+  text-align: center;
+  padding: 12px 36px;
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+
+  color: $accent-text-color;
+  background-color: $accent-color;
+}
+
+.marginbtn {
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.hidden__btn {
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin-left: 32px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+  }
+}
+
+.header__svg--arrow {
+  position: absolute;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+
+  transform: translateY(27%);
+  margin-left: 4px;
+}
+
+.page-header__list {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__list .page-header__item+.page-header__item {
+  margin-left: 30px;
+}
+
+.page-header__link {
+  padding-top: 32px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  color: $white-color;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+
+   padding: 100px 30px 60px 30px;
+    width: 100vw;
+    height: 100vh;
+    
+    
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+  
+
+  background-color: $primary-bg-color;
+
+
+  @include tel {
+    padding: 104px 112px 88px 112px;
+  }
+
+  @include tablet {
+    padding: 140px 191px 528px 191px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-header__logo {
+  position: absolute;
+  top: 12px;
+  left: 34px;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  gap: 110px;
+  
+  @include tel {
+    gap: 114px;
+  }
+}
+
+.menu-header__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+@include tel {
+  gap: 32px;
+}
+
+@include tablet {
+  gap: 40px;
+}
+}
+
+.menu-header__link {
+  display: block;
+  
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  text-align: center;
+  color: $white-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+
+  @include tablet {
+    font-size: 48px;
+  }
+}
+
+.menu-toggle {
+  fill: $primary-text-color;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  @include tel {
+    display: block;
+  }
+
+  @include tablet {
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-toggle.cross {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+.menu-toggle.menu {
+  @include desktop {
+    display: none;
+  }
+}

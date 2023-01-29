@@ -1,0 +1,86 @@
+.reviews {
+  color: black;
+  display: block;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    background-image: url(../images/bg_mobile.png);
+    width: 100%;
+    padding-bottom: 380px;
+  }
+
+  @include tablet {
+    background-image: url(../images/bg_tablet.png);
+    padding-bottom: 335px;
+    width: 100%;
+  }
+
+  @include desktop {
+    background-image: url(../images/bg_desktop.png);
+    padding-bottom: 200px;
+    width: 100%;
+  }
+}
+
+.one-time {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__client-photo {
+  border-radius: 50%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+}
+
+.reviews__text {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #84a178;
+  color: #fcfcfc;
+  padding: 35px 39px;
+  margin-bottom: 32px;
+  width: 280px;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 705px;
+    border-radius: 24px;
+  }
+
+  @include desktop {
+    width: 968px;
+    height: 138px;
+    border-radius: 24px;
+  }
+}
+
+.reviews__client {
+  color: #131313;
+  margin-bottom: 12px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.slick-dots li button:before {
+  color: #d9d9d9;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #84a178;
+  width: 12px;
+  height: 12px;
+}

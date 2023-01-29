@@ -1,0 +1,162 @@
+<header>
+<div class="page-header container">
+    <div class="page-header__container">
+        <a href="./index.html" rel="noopener noreferer" class="page-header__logo animate__animated animate__flip">
+            <picture>
+                <source srcset="./images/logo_desk.png 1x,
+                                            ./images/logo_desk-2x.png 2x,
+                                            ./images/logo_desk-3x.png 3x" media="(min-width:1200px)">
+                <source srcset="./images/logo_tab.png 1x,
+                                            ./images/logo_tab-2x.png 2x,
+                                            ./images/logo_tab-3x.png 3x" media="(min-width:768px)">
+                <source srcset="./images/logo_mob.png 1x,
+                                            ./images/logo_mob-2x.png 2x,
+                                            ./images/logo_mob-3x.png 3x" media="(max-width:767px)">
+                <img srcset="./images/logo_desk.png 1x,
+                                            ./images/logo_desk-2x.png 2x,
+                                            ./images/logo_desk-3x.png 3x" src="./images/logo_desk.png" alt="logo">
+            </picture>
+        </a>
+
+        <nav class="page-header__nav">
+            <ul class="page-header__list">
+                <li class="page-header__item"><a id="home-link" href="./index.html" class="page-header__link">Home</a></li>
+                <li class="page-header__item"><a id="how-made-link" href="./index.html#about" class="page-header__link">How it's
+                        made?</a></li>
+                <li class="page-header__item"><a id="products-link" href="./index.html#products" class="page-header__link">Our products</a>
+                </li>
+                <li class="page-header__item"><a id="contact-link" href="./index.html#contacts" class="page-header__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="page-header__container--flex">
+            <button type="button" class="menu-toggle menu js-open-menu" aria-controls="mobile-menu"
+                aria-expanded="false">
+                <svg width="32" height="32" class="menu-button__svg" aria-label="Menu toggle">
+                    <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <button type="button" class="header__btn hidden__btn hero__buynow-button" data-modal-open="modal-buynow" >Buy now
+                <svg class="header__svg--arrow">
+                    <use href="./images/icons.svg#small-arrow"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <a href="./index.html" rel="noopener noreferer" class="menu-header__logo ">
+            <picture>
+                <source srcset="./images/logo_desk.png 1x,
+                    ./images/logo_desk-2x.png 2x,
+                    ./images/logo_desk-3x.png 3x" media="(min-width:1200px)">
+                <source srcset="./images/logo_tab.png 1x,
+                    ./images/logo_tab-2x.png 2x,
+                    ./images/logo_tab-3x.png 3x" media="(min-width:768px)">
+                <source srcset="./images/logo_mob.png 1x,
+                    ./images/logo_mob-2x.png 2x,
+                    ./images/logo_mob-3x.png 3x" media="(max-width:767px)">
+                <img srcset="./images/logo_desk.png 1x,
+                    ./images/logo_desk-2x.png 2x,
+                    ./images/logo_desk-3x.png 3x" src="./images/logo_desk.png" alt="logo">
+            </picture>
+        </a>
+        <button type="button" class="menu-toggle cross js-close-menu">
+            <svg id="close-mobile" width="32" height="32" class="menu-button__svg close-mobile" aria-label="Menu toggle">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="menu-header__container container">        
+          <ul class="menu-header__list">
+            <li class="menu-header__item"><a href="./index.html" class="menu-header__link">Home</a></li>
+            <li class="menu-header__item"><a href="./index.html#about" class="menu-header__link js-close-menu"> How it's made?</a></li>
+            <li class="menu-header__item"><a href="./index.html#products" class="menu-header__link js-close-menu">Our products</a></li>
+            <li class="menu-header__item"><a href="./index.html#contacts" class="menu-header__link js-close-menu">Contacts</a></li>
+        </ul>
+            <button type="button" class="header__btn marginbtn" 
+            data-modal="5"
+            data-modal-open="modal-buynow">Buy now
+                <svg class="header__svg--arrow">
+                    <use href="./images/icons.svg#small-arrow"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Модалка Buy now-->
+<div class="backdrop-header is-hidden" data-modal id="modal-buynow">
+    <div class="modal header-modal">
+      <button data-modal-close type="button" class="close-modal" >
+        <svg class="icons-close" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+      </button>
+      
+      <p class="header-modal__title">Buy now</p>
+
+      <form class="header-modal__form" action="">
+        
+<div class="form-wrap">
+              <ul class="header-modal__list">
+        <li class="header-modal__item">
+          <label class="header-modal__label">
+            <input
+              class="header-modal__checkbox"
+              type="checkbox"
+              name="product"
+              value="icecream"
+            />
+            <span class="header-modal__product icecream">ice cream</span>
+          </label>
+        </li>
+        <li class="header-modal__item">
+          <label class="header-modal__label">
+            <input
+              class="header-modal__checkbox"
+              type="checkbox"
+              name="product"
+              value="icecoffe"
+            />
+            <span class="header-modal__product icecoffe">ice coffee</span>
+          </label>
+        </li>
+        <li class="header-modal__item">
+          <label class="header-modal__label">
+            <input
+              class="header-modal__checkbox"
+              type="checkbox"
+              name="product"
+              value="milkshake"
+            />
+            <span class="header-modal__product milkshake">milkshake</span>
+          </label>
+        </li>
+      </ul>
+
+        <input
+          class="header-modal__input"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input class="header-modal__input" type="phone" placeholder="Phone" required/>
+        <textarea
+          class="header-modal__input header-modal__comment"
+          name=""
+          id=""
+          placeholder="Comment"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="submit-btn btn" type="submit">Submit</button>
+      </div>
+      </form>
+    </div>
+    </div>
+    
+
+
+</header>

@@ -1,0 +1,36 @@
+.gallery {
+  &__img {
+    margin: auto;
+    border-radius: 24px;
+  }
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-top: 27px;
+
+    &__img {
+      max-width: 368px;
+      width: 100%;
+      margin: auto;
+    }
+
+    &_container {
+      transform: translateY(-27px);
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    margin-top: 144px;
+
+    &_container {
+      transform: translateY(-144px);
+    }
+  }
+
+  @include desktop {
+    margin-top: 98px;
+
+    &_container {
+      transform: translateY(-98px);
+    }
+  }
+}

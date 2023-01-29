@@ -1,0 +1,245 @@
+.modal-ingedients {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 28px 20px;
+  max-width: 90vw;
+  max-height: 90vh;
+
+  overflow: auto;
+
+  background-color: $primary-text-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
+
+  @include desktop {
+    width: 568px;
+    height: 968px;
+    padding: 32px 40px;
+  }
+}
+
+.modal-ingedients__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: $tittle-text-color;
+  width: 142px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 273px;
+  }
+}
+
+.modal-ingedients__wrap {
+  max-width: 132px;
+  max-height: 132px;
+  margin-bottom: 23px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  transform: translateY(10%);
+
+  background-color: #9cbe8f;
+  border-radius: 50%;
+  background: linear-gradient(0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-ingedients__wrap img {
+  transform: translateY(-10%);
+}
+
+.cho-icecream-img {
+  display: block;
+}
+
+.energy-value {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 48px;
+  }
+}
+
+.energy-value__list {
+  display: flex;
+  justify-content: center;
+}
+
+.energy-value__elips {
+  width: 53px;
+  height: 72px;
+  border-radius: 40%;
+  border: 2px solid #9cbe8f;
+  position: relative;
+
+  @include tablet {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.energy-value__elips-text {
+  position: absolute;
+  bottom: 0;
+  left: 27%;
+}
+
+.energy-value__circle {
+  height: 43px;
+  width: 43px;
+  background-color: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 4px;
+
+  @include tablet {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+.energy-value__circle-text {
+  position: absolute;
+  top: -5;
+  left: 7;
+}
+
+.energy-value__circle-text,
+.energy-value__elips-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $tittle-text-color;
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 2.3;
+  }
+}
+
+.energy-value__circle-text {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+
+.energy-value__item:not(:last-child) {
+  margin-right: 9px;
+
+  @include tablet {
+    margin-right: 20px;
+  }
+}
+
+.cho-icecream-ingred {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: $tittle-text-color;
+  margin-bottom: 24px;
+}
+
+.cho-icecream-ingred__item {
+  margin: 0 auto;
+  max-width: 488px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  display: flex;
+  letter-spacing: 0.04em;
+  color: $tittle-text-color;
+  justify-content: space-between;
+
+  align-items: baseline;
+}
+
+.cho-icecream-ingred__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-ingedients-form {
+  margin-top: 40px;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    margin-top: 48px;
+    width: 368px;
+  }
+}
+
+.modal-ingedients-form__group:nth-child(-n + 2) {
+  margin-bottom: 16px;
+}
+
+.modal-ingedients-form__input {
+  font-size: 14px;
+  line-height: 1.4;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 11px;
+  width: 240px;
+  color: $tittle-text-color;
+
+  @include tablet {
+    width: 368px;
+    padding: 11px 16px;
+  }
+}
+
+.modal-ingedients-form__textarea {
+  width: 240px;
+  height: 84px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $tittle-text-color;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 11px;
+  resize: none;
+
+  @include tablet {
+    width: 368px;
+    padding: 11px 16px;
+  }
+}
+
+.modal-ingedients__button {
+  display: block;
+
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    margin-top: 32px;
+    line-height: 1.4;
+  }
+}

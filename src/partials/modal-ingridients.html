@@ -1,0 +1,150 @@
+
+<div class="backdrop-ingedients is-hidden" data-modal id="ingedients">
+<div class="modal-ingedients">
+    <button data-modal-close type="button" class="modal-ingedients--close close-modal" >
+                    <svg class="icons-close" width="11" height="11">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                
+     <div>
+    <p class="modal-ingedients__title">Chololate icecream</p>
+
+    <div class="modal-ingedients__wrap">
+
+    <picture class="cho-icecream-img">
+        <source srcset="./images/cho-icecream_desk.png 1x,
+        ./images/cho-icecream_desk-2x.png 2x,
+        ./images/cho-icecream_desk-3x.png 3x"
+         media="(min-width: 1200px)" />
+
+       <source srcset="./images/cho-icecream_mob.png 1x,
+        ./images/cho-icecream_mob-2x.png 2x,
+        ./images/cho-icecream_mob-3x.png 3x"
+         media="(min-width: 480px)" />
+
+       <img srcset="./images/cho-icecream_desk.png 1x,
+        ./images/cho-icecream_desk-2x.png 2x.
+        ./images/cho-icecream_desk-3x.png 3x"
+        src="./images/cho-icecream_desk.png" alt="ice-cream" width="132">
+
+    </picture>
+    </div>
+    </div>
+
+    <div class="energy-value">
+
+       <ul class="energy-value__list list">
+        <li class="energy-value__item">
+           <div class="energy-value__container">
+            <div class="energy-value__elips">
+              <div class="energy-value__circle">
+                <p class="energy-value__circle-text">320</p>
+            </div>
+               <p class="energy-value__elips-text">ckal</p>
+            </div>
+           </div>
+        </li>
+
+        <li class="energy-value__item">
+       <div class="energy-value__container">
+            <div class="energy-value__elips">
+              <div class="energy-value__circle">
+                <p class="energy-value__circle-text">4g</p>
+            </div>
+               <p class="energy-value__elips-text">Prot..</p>
+            </div>
+       </div>
+        </li>
+
+        <li class="energy-value__item">
+        <div class="energy-value__container">
+            <div class="energy-value__elips">
+              <div class="energy-value__circle">
+                <p class="energy-value__circle-text">8,2g</p>
+            </div>
+               <p class="energy-value__elips-text">Fats</p>
+            </div>
+        </div>
+        </li>
+
+        <li class="energy-value__item">
+          <div class="energy-value__container">
+            <div class="energy-value__elips">
+              <div class="energy-value__circle">
+                <p class="energy-value__circle-text">40,4g</p>
+            </div>
+               <p class="energy-value__elips-text">Carbs</p>
+            </div>
+          </div>
+    </li>
+       </ul>
+    
+      </div>
+
+    <div>
+    <h3 class="cho-icecream-ingred">Ingredients</h3>
+    <div>
+  <ul class="cho-icecream-ingred__list list">
+    <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Milk</p>
+        <p class="cho-icecream-ingred__value">100ml</p>
+
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Belgian chocolate</p>
+        <p class="cho-icecream-ingred__value">150 ml</p>
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Cocoa powder</p>
+        <p class="cho-icecream-ingred__value">30g</p>
+    </li>
+    <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Sugar</p>
+        <p class="cho-icecream-ingred__value">40g</p>
+    </li>
+  <li class="cho-icecream-ingred__item">
+        <p class="cho-icecream-ingred__name">Vanilla Sugar</p>
+        <p class="cho-icecream-ingred__value">10g</p>
+    </li>
+  </ul>
+  </div>
+  </div>
+
+<form class="modal-ingedients-form">
+    <div class="modal-ingedients-form__group">
+        <label class="modal-ingedients-form__label">
+            <input type="text"
+            class="modal-ingedients-form__input"
+            placeholder="Name"
+             pattern="[a-zA-Z]+"
+             title="Name"
+             required/>
+        </label>
+
+    </div>
+    <div class="modal-ingedients-form__group">
+        <label>
+            <input class="modal-ingedients-form__input"
+            type="tel"
+        name="phone number"
+        placeholder="+380 (__) ___-__-__"
+        data-slots="_"
+        title="+380 (00) 000-00-00"
+        required/>
+        </label>
+    </div>
+
+    <div class="modal-ingedients-form__group">
+           <label>
+              <textarea name="Comment" 
+              class="modal-ingedients-form__textarea"
+              placeholder="Comment"></textarea>
+        </label>
+    </div>
+   <button type="submit" class="modal-ingedients__button submit-button button">Submit</button>
+
+</form>
+</div>
+
+</div>
